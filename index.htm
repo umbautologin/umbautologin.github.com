@@ -1,1 +1,159 @@
-test
+<html>
+<head>
+<title>UMB Wireless Autologin</title>
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.9.custom.css" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19564702-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript" src="syntaxhighlighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet" href="syntaxhighlighter/styles/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+
+
+</head>
+<body>
+
+<center>
+<div class="ui-widget" style="font-size: 40px;">
+UMB Wireless Autologin<br> <font style="font-size: 20px;">to give the UMASS Boston wireless autologin like 802.1x</font><br>
+September 2012
+</div>
+<div class="ui-widget" style="font-size: 20px;">
+By Joseph Paul Cohen
+</div>
+</center>
+
+<center>
+<div class="ui-widget" style="font-size: 40px;">
+THIS IS NOT MADE BY UMASS BOSTON - IT IS MADE BY A STUDENT
+</div>
+
+</center>
+
+
+<div class="ui-state-error ui-corner-all ui-widget" style="margin:10px;">
+<center>
+  <p>The UMB wireless since at least 2010 (with a short use of a login agent) 
+	has used a web based authentication page on their wireless system.  
+	This requires users to authenticate at least once or twice a day via a captive
+	portal. This captive portal causes the computer to think its online when its not.
+	This causes email clients to return server errors which causes setbacks in the 
+	productivity of the students. For smartphones the situation is worse. Smartphones 
+	can switch between wireless and 3G/4G antennas. Phones prefer wireless because 
+	it's faster and less expensive.  <b>If a student has wireless enabled their phone will 
+	attach to the UMB-Student network and not be able to check email.</b> This is a 
+	major issue that other universities have solved by implementing 802.1x. The campus 
+	stated that it was not possible to implement what almost all other universities 
+	in Boston have, so this app is a solution to the problem!
+	
+	</p>
+</center>
+</div>
+
+
+<center>
+<a href="umbautologin-s1.png">
+<img src="umbautologin-s1.png" alt="main screen" style="width:30%;"/>
+</a>
+<a href="umbautologin-s2.png">
+<img src="umbautologin-s2.png" alt="settings screen" style="width:30%;"/>
+</a>
+</center>
+
+
+<div class="ui-state-error ui-corner-all ui-widget" style="margin:10px;">
+<center>
+	<p>This app works by simulating a user logging into the captive portal.  
+	It uses the username and password from the settings page to authenticate 
+	to the wireless network.
+	</p>
+	<p>When your wifi connects to the network "UMB-Student" the process begins. 
+	It will first check to see if you are connected, if it encounters the login 
+	page it will log in.
+	</p>
+</center>
+</div>
+
+<div class="ui-state-error ui-corner-all ui-widget" style="margin:10px;">
+<center>
+	<a href="joecohen.umbautologin.apk">
+	<p style="font-size: xx-large;">
+	<img src="android.jpg" alt="download" style="width:100px;"/><br>
+	Download!</p>
+	</a>
+	You can also type <a href="http://bit.ly/umbautologin">http://bit.ly/umbautologin</a> into your phone or scan this barcode:
+	<p>
+	<img src="qr.umbautologin.png" alt="qr code" style="width:200px;"/>
+	</p>
+	
+</center>
+</div>
+
+
+
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2068283315745938";
+/* 728x90, created 2/13/08 */
+google_ad_slot = "3464186079";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+
+
+
+
+<div class="ui-state-error ui-corner-all ui-widget" style="margin:10px;">
+<center>
+	<p><b style="font-size: xx-large;">To Install: </b> Download this app on your phone and then open it and press install. 
+	You might have to enable "Unknown Sources" to install apps that don't come from the market.
+	</p>
+</center>
+</div>
+
+<div class="ui-state-error ui-corner-all ui-widget" style="margin:10px;">
+<center>
+	<p><b style="font-size: xx-large;">How do I donate? </b> I'm glad you asked. Email me at joecohen -at- ieee.org.
+	</p>
+</center>
+</div>
+
+<div class="ui-state-error ui-corner-all ui-widget" style="margin:10px;">
+<center>
+	<p><b style="font-size: xx-large;">FAQ: </b></p>
+	<p>
+	It doesn't work after I install it - Turn your wifi off and on and wait. The login in triggered when your network connection changes
+	</p>
+	<p>
+	It says wrong username and password - Press setting and enter the username and password.
+	</p>
+	<p>
+	What is the "URL to check" - It is used to check if you can access the internet. Don't change this from "http://www.umb.edu/"
+	</p>
+	<p>
+	Do I have to open the app when I get to campus - No it will turn on when it senses youa re connected to "UMB-Student"
+	</p>
+</center>
+</div>
+
+</body>
+</html>
